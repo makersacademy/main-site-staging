@@ -100,6 +100,14 @@
         </ul>
       </nav>
     </header>
+    <script src="/javascripts/track-form-submit-to-analytics-1c9ff00e.js" type="text/javascript"></script>
+    <script>
+      function submitFormDataToAnalytics (formData) {
+        analytics.alias(formData.email);
+        analytics.identify(formData.email, formData)
+        analytics.track("Submitted Fridge Raiders form")
+      }
+    </script>
     <section class='hero-splash' style='background-image: url(http://assets.makersacademy.com/images/backgrounds/riz-and-tom.jpg);'>
       <div class='container'>
         <div class='centered-row'>
