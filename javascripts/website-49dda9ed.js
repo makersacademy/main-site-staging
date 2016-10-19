@@ -11765,6 +11765,13 @@ Prism.languages.yaml={scalar:{pattern:/([\-:]\s*(![^\s]+)?[ \t]*[|>])[ \t]*(?:(\
  */
 
 
+ $(".email-capture").on("submit", function(event) {
+   event.preventDefault();
+   analytics.alias("irina@makersacademy.com");
+   analytics.identify("irina@makersacademy.com", {email: "irina@makersacademy.com", Newsletter: true, Technical: true});
+   analytics.track("Signed up for newsletter");
+ });
+
 (function ($, analytics) {
   'use strict';
 
