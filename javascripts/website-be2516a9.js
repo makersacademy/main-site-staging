@@ -12370,9 +12370,7 @@ $(document).ready(function() {
   var properties = {"Course Type": "Offline"};
 
   $(document).ready(function(){
-    analytics.ready(function() {
-      tracking.trackClicks(targets, properties);
-      $(".email-capture").emailCapture();
-    });
+    tracking.trackClicks(targets, properties);
+    // $(".email-capture").emailCapture();
   });
 })(jQuery, tracking);
