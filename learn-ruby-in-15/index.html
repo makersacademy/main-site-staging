@@ -196,7 +196,7 @@
       analytics.track('Viewed Landing Page', {'Landing Page': 'Learn Ruby In 15'});
       analytics.identify({'Technical': true});
       
-      $(".email-capture").on("submit", function(event) {
+      jQuery(".email-capture").on("submit", function(event) {
         event.preventDefault();
         analytics.alias("irina@makersacademy.com");
         analytics.identify("irina@makersacademy.com", {email: "irina@makersacademy.com", Newsletter: true, Technical: true});
