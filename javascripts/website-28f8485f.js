@@ -12371,6 +12371,6 @@ $(document).ready(function() {
 
   $(document).ready(function(){
     tracking.trackClicks(targets, properties);
-    // $(".email-capture").emailCapture();
+    $(".email-capture").emailCapture();
   });
 })(jQuery, tracking);
