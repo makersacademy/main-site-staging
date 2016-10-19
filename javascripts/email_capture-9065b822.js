@@ -12,14 +12,7 @@
  */
 
 
- $(".email-capture").on("submit", function(event) {
-   event.preventDefault();
-   analytics.alias("irina@makersacademy.com");
-   analytics.identify("irina@makersacademy.com", {email: "irina@makersacademy.com", Newsletter: true, Technical: true});
-   analytics.track("Signed up for newsletter");
- });
-
-(function ($, analytics) {
+(function ($) {
   'use strict';
 
   $.fn.emailCapture = function () {
@@ -72,4 +65,4 @@
       }
     });
   };
-})(jQuery, analytics);
+})(jQuery);
