@@ -792,7 +792,8 @@
     </section>
     <!-- Analytics event for landing page -->
     <script>
-      analytics.track('Viewed Landing Page', {'Landing Page': 'Podcast'}, {'nonInteraction': 1});
+      analytics.track('Viewed Landing Page', {'Landing Page': 'Podcast'});
+      analytics.identify({'Podcast': true});
     </script>
     <footer role='contentinfo'>
       <div class='container'>

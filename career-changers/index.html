@@ -1986,7 +1986,8 @@
     </section>
     <!-- Analytics event for landing page -->
     <script>
-      analytics.track('Viewed Landing Page', {'Landing Page': 'Career Changers'}, {'nonInteraction': 1}));
+      analytics.track('Viewed Landing Page', {'Landing Page': 'Career Changers'});
+      analytics.identify({'Career Changer': true});
     </script>
     <footer role='contentinfo'>
       <div class='container'>
