@@ -193,7 +193,8 @@
     </section>
     <!-- Analytics event for landing pages -->
     <script>
-      analytics.track('Viewed Landing Page', {'Landing Page': 'Learn Ruby In 15'}, {'nonInteraction:' 1});
+      analytics.track('Viewed Landing Page', {'Landing Page': 'Learn Ruby In 15'});
+      analytics.identify({'Technical': true});
     </script>
     <footer role='contentinfo'>
       <div class='container'>
