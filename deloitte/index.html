@@ -236,7 +236,7 @@
         </div>
       </div>
     </section>
-    <section class='hero--apply' style='background-image: url(http://assets.makersacademy.com/images/backgrounds/fortune.jpg);'>
+    <section class='hero--apply' style='background-image: url(http://assets.makersacademy.com/images/backgrounds/postit-wall.jpg);'>
       <div class='container'>
         <div class='centered-row'>
           <div class='column'>
@@ -255,7 +255,8 @@
     </section>
     <!-- Analytics event for landing page -->
     <script>
-      analytics.track('Viewed Landing Page', {'Landing Page': 'Deloitte'}, {'nonInteraction': 1}));
+      analytics.track('Viewed Landing Page', {'Landing Page': 'Deloitte'});
+      analytics.identify({'Deloitte': true});
     </script>
     <footer role='contentinfo'>
       <div class='container'>
@@ -326,7 +327,9 @@
               <h3>About</h3>
             </li>
             <li>
-              <a href="http://makers-academy.breezy.hr">We're hiring</a>
+              <b>
+                <a href="http://makers-academy.breezy.hr">We're hiring</a>
+              </b>
             </li>
             <li>
               <a href="/code-of-conduct/">Code of Conduct</a>

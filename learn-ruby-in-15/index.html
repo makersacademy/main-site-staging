@@ -193,7 +193,8 @@
     </section>
     <!-- Analytics event for landing pages -->
     <script>
-      analytics.track('Viewed Landing Page', {'Landing Page': 'Learn Ruby In 15'}, {'nonInteraction:' 1});
+      analytics.track('Viewed Landing Page', {'Landing Page': 'Learn Ruby In 15'});
+      analytics.identify({'Technical': true});
     </script>
     <footer role='contentinfo'>
       <div class='container'>
@@ -264,7 +265,9 @@
               <h3>About</h3>
             </li>
             <li>
-              <a href="http://makers-academy.breezy.hr">We're hiring</a>
+              <b>
+                <a href="http://makers-academy.breezy.hr">We're hiring</a>
+              </b>
             </li>
             <li>
               <a href="/code-of-conduct/">Code of Conduct</a>
