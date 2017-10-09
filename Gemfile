@@ -12,6 +12,8 @@ gem 'middleman-gh-pages'
 gem 'middleman-meta-tags'
 gem 'middleman-search_engine_sitemap'
 gem 'neat', "~> 1.7.2"
+gem 'image_optim'
+gem "middleman-imageoptim"
 
 gem 'middleman-dotenv', '~> 2.0'
 gem "middleman-sprockets", "~> 4.0.0.rc"
